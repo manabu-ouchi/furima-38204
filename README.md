@@ -74,22 +74,7 @@
 
 
 # ActiveHash::Baseを用いるモデル
-##　year model
 
-
-### Association
-- has_many :users
-
-
-##　month モデル
-
-### Association
-- has_many :users
-
-##　day モデル
-
-### Association
-- has_many :users
 
 ##　category モデル(カテゴリー)
 
@@ -113,7 +98,7 @@
 
 ### Association
 - has_many :items
-- has_many :delivery_addresses
+- has_many :orders
 
 
 ##　delivery_day モデル(配送までの日数)
