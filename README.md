@@ -53,33 +53,21 @@
 | ------------------ | --------- | ------------------------------ |
 | user               | reference | null: false, foreign_key: true |          
 | item               | reference | null: false, foreign_key: true |         
- 
-
+| post_code          | string    | null: false                    |
+| city               | string    | null: false                    |
+| address            | string    | null: false                    |
+| phone_number       | string    | null: false                    | 
+| prefecture_id      | integer   | null: false                    |
 
 ### Association
 - belongs_to :user
 - belongs_to :item
 - has_one :delivery_addresses
 
-
-## delivery_addresses テーブル
-
-| Column             | Type      | Options                        |
-| ------------------ | --------- | ------------------------------ |
-| post_code          | string    | null: false                    |
-| city               | string    | null: false                    |
-| address            | string    | null: false                    |
-| phone_number       | string    | null: false                    |
-| user               | reference | null: false, foreign_key: true |            
-| order              | reference | null: false, foreign_key: true |         
-| prefecture_id      | integer   | null: false                    |
-
-
-### Association
-- belong_to :user
-- belong_to :order
-
 - belong_to :prefecture
+
+
+
 
 
 
