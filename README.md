@@ -41,7 +41,7 @@
 
 
 ### Association
-- has_many :order
+- has_one :order
 - has_many :comments
 - belong_to :user
 
