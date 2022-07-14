@@ -51,17 +51,6 @@
 - belong_to :prefecture
 - belong_to :delivery_day
 
-## comments テーブル
-
-| Column             | Type      | Options                        |
-| ------------------ | --------- | ------------------------------ |
-| text               | text      | null: false                    |
-| user               | reference | null: false, foreign_key: true |
-| item               | reference | null: false, foreign_key: true |
-
-### Association
-- belong_to :user
-- belong_to :item
 
 ## order テーブル
 
