@@ -52,7 +52,7 @@
 - belong_to :delivery_day
 
 
-## order テーブル
+## orders テーブル
 
 | Column             | Type      | Options                        |
 | ------------------ | --------- | ------------------------------ |
@@ -62,8 +62,8 @@
 
 
 ### Association
-- belong_to :user
-- belong_to :items
+- belongs_to :user
+- belongs_to :item
 - has_one :delivery_addresses
 
 
