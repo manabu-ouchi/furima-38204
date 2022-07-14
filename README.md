@@ -9,9 +9,8 @@
 | first_name         | string  | null: false |
 | last_name          | string  | null: false |
 | first_name_katakana| string  | null: false |
-| year_id            | integer | null: false |
-| month_id           | integer | null: false |
-| day_id             | integer | null: false |
+| birth_date         | date    | null: false |
+
 
 
 ### Association
@@ -21,9 +20,6 @@
 - has_many :delivery_addresses
 
 
-- belong_to :year
-- belong_to :month
-- belong_to :day
 
 
 ## items テーブル
