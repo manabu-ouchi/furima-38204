@@ -53,7 +53,16 @@
 | Column             | Type      | Options                        |
 | ------------------ | --------- | ------------------------------ |
 | user               | references| null: false, foreign_key: true |          
-| item               | references| null: false, foreign_key: true |         
+| item               | references | null: false, foreign_key: true |         
+
+### Association
+- belongs_to :user
+- belongs_to :item
+- has_one :delivery_addresses
+
+
+
+## delivery_addresses テーブル
 | post_code          | string    | null: false                    |
 | city               | string    | null: false                    |
 | address            | string    | null: false                    |
@@ -61,15 +70,9 @@
 | prefecture_id      | integer   | null: false                    |
 
 ### Association
-- belongs_to :user
-- belongs_to :item
-- has_one :delivery_addresses
+- belongs_to :order
 
 - belong_to :prefecture
-
-
-
-
 
 
 
