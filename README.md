@@ -63,7 +63,7 @@
 
 
 ## delivery_addresses テーブル
-| post_code          | integer   | null: false                    |
+| post_code          | string    | null: false                    |
 | city               | string    | null: false                    |
 | address            | string    | null: false                    |
 | building_name      | string    |                                |
