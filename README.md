@@ -26,6 +26,7 @@
 
 | Column             | Type      | Options                        |
 | ------------------ | --------- | ------------------------------ |
+| name               | string    | null: false                    |
 | detail             | text      | null: false                    |
 | price              | string    | null: false                    |
 | user               | reference | null: false, foreign_key: true |
