@@ -28,7 +28,7 @@
 | ------------------ | --------- | ------------------------------ |
 | name               | string    | null: false                    |
 | detail             | text      | null: false                    |
-| price              | string    | null: false                    |
+| price              | integer   | null: false                    |
 | user               | references| null: false, foreign_key: true |
 | category_id        | integer   | null: false                    |
 | condition_id       | integer   | null: false                    |
