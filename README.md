@@ -29,7 +29,7 @@
 | name               | string    | null: false                    |
 | detail             | text      | null: false                    |
 | price              | string    | null: false                    |
-| user               | reference | null: false, foreign_key: true |
+| user               | references| null: false, foreign_key: true |
 | category_id        | integer   | null: false                    |
 | condition_id       | integer   | null: false                    |
 | delivery_id        | integer   | null: false                    |
@@ -52,8 +52,8 @@
 
 | Column             | Type      | Options                        |
 | ------------------ | --------- | ------------------------------ |
-| user               | reference | null: false, foreign_key: true |          
-| item               | reference | null: false, foreign_key: true |         
+| user               | references| null: false, foreign_key: true |          
+| item               | references| null: false, foreign_key: true |         
 | post_code          | string    | null: false                    |
 | city               | string    | null: false                    |
 | address            | string    | null: false                    |
