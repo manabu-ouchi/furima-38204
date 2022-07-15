@@ -39,13 +39,13 @@
 
 ### Association
 - has_one :order
-- belong_to :user
+- belongs_to :user
 
-- belong_to :category
-- belong_to :condition
-- belong_to :delivery
-- belong_to :prefecture
-- belong_to :delivery_day
+- belongs_to :category
+- belongs_to :condition
+- belongs_to :delivery
+- belongs_to :prefecture
+- belongs_to :delivery_day
 
 
 ## orders テーブル
@@ -73,7 +73,7 @@
 ### Association
 - belongs_to :order
 
-- belong_to :prefecture
+- belongs_to :prefecture
 
 
 
