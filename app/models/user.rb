@@ -11,12 +11,7 @@ class User < ApplicationRecord
   validates :last_name_katakana, presence: true
   validates :birth_date, presence: true
 
-  VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i.freeze
-  validates :password, format: { with: VALID_PASSWORD_REGEX }
-  VALID_NAME_REGEX = /\A[ぁ-んァ-ン一-龥]/i.freeze
-  validates :first_name, :last_name, format: { with: VALID_PASSWORD_REGEX }
-  VALID_KATAKANA_REGEX = /\A[ァ-ヶー－]+\z/i.freeze
-  validates :first_name_katakana, :last_name_katakana, format: { with: VALID_KATAKANA_REGEX }
+  
  
   
   has_many :items
