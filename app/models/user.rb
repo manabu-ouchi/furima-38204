@@ -5,7 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :nickname, presence: true
-  validates :profile, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :first_name_katakana, presence: true
@@ -17,7 +16,7 @@ class User < ApplicationRecord
   VALID_NAME_REGEX = /\A[ぁ-んァ-ン一-龥]/i.freeze
   validates :first_name, :last_name, format: { with: VALID_PASSWORD_REGEX }
   VALID_KATAKANA_REGEX = /\A[ァ-ヶー－]+\z/i.freeze
-  validates :first_name_katakana, :last_name_katakana, format: { with: VALID_LATAKANA_REGEX }
+  validates :first_name_katakana, :last_name_katakana, format: { with: VALID_KATAKANA_REGEX }
  
   
   has_many :items
