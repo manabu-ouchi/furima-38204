@@ -19,7 +19,7 @@ class User < ApplicationRecord
   validates :first_name_katakana, :last_name_katakana, format: { with: VALID_KATAKANA_REGEX }
  
   
-  # has_many :items
+  has_many :items
   # has_many :orders
          
 end
