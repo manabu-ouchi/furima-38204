@@ -4,8 +4,9 @@ class OrdersController < ApplicationController
   
     @item = Item.find(params[:item_id])
     @order_delivery_address = OrderDeliveryAddress.new
-    
-
+    if @item.user_id == current_user.id || @item.order.present?
+      redirect_to root_path
+    end
 
   end
 
