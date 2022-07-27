@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_27_053319) do
+ActiveRecord::Schema.define(version: 2022_07_24_062723) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 2022_07_27_053319) do
   end
 
   create_table "delivery_addresses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "post_code"
-    t.string "city"
-    t.string "address"
+    t.string "post_code", null: false
+    t.string "city", null: false
+    t.string "address", null: false
     t.string "building_name"
-    t.string "phone_number"
-    t.integer "prefecture_id"
+    t.string "phone_number", null: false
+    t.integer "prefecture_id", null: false
     t.bigint "order_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -49,7 +49,6 @@ ActiveRecord::Schema.define(version: 2022_07_27_053319) do
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "name", null: false
     t.text "detail", null: false
     t.integer "price", null: false
     t.integer "category_id", null: false
